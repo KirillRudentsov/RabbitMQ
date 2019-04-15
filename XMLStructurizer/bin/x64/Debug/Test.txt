@@ -1,0 +1,1 @@
+%3csite+version%3d%222.0%22+xmlns%3d%22http%3a%2f%2fwww.sigos.de%2fsite%2fxml%22%3e+%3cuser-context+User%3d%22hexagon%22%3e+%3ctest-definition+action%3d%22read%22+Path%3d%22%2fUsers%2fXML%22%2f%3e+%3c%2fuser-context%3e+%3c%2fsite%3e

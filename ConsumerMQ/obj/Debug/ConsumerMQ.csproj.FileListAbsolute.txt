@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\ConsumerMQ.exe.config
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\ConsumerMQ.exe
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\ConsumerMQ.pdb
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\RabbitMQ.Client.xml
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\obj\Debug\ConsumerMQ.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\obj\Debug\ConsumerMQ.exe
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\obj\Debug\ConsumerMQ.pdb
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\ConsumerMQ\bin\Debug\Oracle.ManagedDataAccess.dll

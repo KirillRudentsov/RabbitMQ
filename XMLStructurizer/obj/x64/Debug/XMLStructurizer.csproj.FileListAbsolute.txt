@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\XMLStructurizer.exe.config
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\XMLStructurizer.exe
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\XMLStructurizer.pdb
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\obj\x64\Debug\XMLStructurizer.Form1.resources
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\obj\x64\Debug\XMLStructurizer.Properties.Resources.resources
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\obj\x64\Debug\XMLStructurizer.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\obj\x64\Debug\XMLStructurizer.exe
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\obj\x64\Debug\XMLStructurizer.pdb
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\log4net.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\bin\x64\Debug\log4net.xml
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\XMLStructurizer\obj\x64\Debug\XMLStructurizer.csprojResolveAssemblyReference.cache

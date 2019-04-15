@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified">
+      <s:element name="UploadSnapshotFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sClientID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSnapshotFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadSnapshotFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommandId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="robotId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommandIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommandIdResult" type="ServiceResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ServiceResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CmdId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CmdText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsOk" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCommandData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cmdId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommandDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommandDataResult" type="ServiceResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCommandVariablesResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cmdId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="testResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCommandVariablesResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetCommandVariablesResultResult" type="ServiceResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCommandResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cmdId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="testResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCommandResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetCommandResultResult" type="ServiceResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCommandError">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cmdId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="testResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCommandErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetCommandErrorResult" type="ServiceResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadSnapshotFileSoapIn">
+    <wsdl:part name="parameters" element="UploadSnapshotFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadSnapshotFileSoapOut">
+    <wsdl:part name="parameters" element="UploadSnapshotFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommandIdSoapIn">
+    <wsdl:part name="parameters" element="GetCommandId" />
+  </wsdl:message>
+  <wsdl:message name="GetCommandIdSoapOut">
+    <wsdl:part name="parameters" element="GetCommandIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommandDataSoapIn">
+    <wsdl:part name="parameters" element="GetCommandData" />
+  </wsdl:message>
+  <wsdl:message name="GetCommandDataSoapOut">
+    <wsdl:part name="parameters" element="GetCommandDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetCommandVariablesResultSoapIn">
+    <wsdl:part name="parameters" element="SetCommandVariablesResult" />
+  </wsdl:message>
+  <wsdl:message name="SetCommandVariablesResultSoapOut">
+    <wsdl:part name="parameters" element="SetCommandVariablesResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetCommandResultSoapIn">
+    <wsdl:part name="parameters" element="SetCommandResult" />
+  </wsdl:message>
+  <wsdl:message name="SetCommandResultSoapOut">
+    <wsdl:part name="parameters" element="SetCommandResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetCommandErrorSoapIn">
+    <wsdl:part name="parameters" element="SetCommandError" />
+  </wsdl:message>
+  <wsdl:message name="SetCommandErrorSoapOut">
+    <wsdl:part name="parameters" element="SetCommandErrorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DbServiceSoap">
+    <wsdl:operation name="UploadSnapshotFile">
+      <wsdl:input message="UploadSnapshotFileSoapIn" />
+      <wsdl:output message="UploadSnapshotFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommandId">
+      <wsdl:input message="GetCommandIdSoapIn" />
+      <wsdl:output message="GetCommandIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommandData">
+      <wsdl:input message="GetCommandDataSoapIn" />
+      <wsdl:output message="GetCommandDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandVariablesResult">
+      <wsdl:input message="SetCommandVariablesResultSoapIn" />
+      <wsdl:output message="SetCommandVariablesResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandResult">
+      <wsdl:input message="SetCommandResultSoapIn" />
+      <wsdl:output message="SetCommandResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandError">
+      <wsdl:input message="SetCommandErrorSoapIn" />
+      <wsdl:output message="SetCommandErrorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DbServiceSoap" type="DbServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadSnapshotFile">
+      <soap:operation soapAction="/UploadSnapshotFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommandId">
+      <soap:operation soapAction="/GetCommandId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommandData">
+      <soap:operation soapAction="/GetCommandData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandVariablesResult">
+      <soap:operation soapAction="/SetCommandVariablesResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandResult">
+      <soap:operation soapAction="/SetCommandResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandError">
+      <soap:operation soapAction="/SetCommandError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DbServiceSoap12" type="DbServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadSnapshotFile">
+      <soap12:operation soapAction="/UploadSnapshotFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommandId">
+      <soap12:operation soapAction="/GetCommandId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommandData">
+      <soap12:operation soapAction="/GetCommandData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandVariablesResult">
+      <soap12:operation soapAction="/SetCommandVariablesResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandResult">
+      <soap12:operation soapAction="/SetCommandResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCommandError">
+      <soap12:operation soapAction="/SetCommandError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DbService">
+    <wsdl:port name="DbServiceSoap" binding="DbServiceSoap">
+      <soap:address location="http://localhost/dbservice/dbservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DbServiceSoap12" binding="DbServiceSoap12">
+      <soap12:address location="http://localhost/dbservice/dbservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

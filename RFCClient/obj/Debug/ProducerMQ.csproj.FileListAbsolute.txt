@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\RFCClient.exe.config
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\RFCClient.exe
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\RFCClient.pdb
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\RabbitMQ.Client.xml
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\obj\Debug\ProducerMQ.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\obj\Debug\RFCClient.exe
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\obj\Debug\RFCClient.pdb
+C:\Users\Administrator\Desktop\structurizerXML\XMLStructurizer\RFCClient\bin\Debug\Oracle.ManagedDataAccess.dll
